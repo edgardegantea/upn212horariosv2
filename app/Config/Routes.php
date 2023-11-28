@@ -213,6 +213,9 @@ $routes->group('docente', ['filter' => 'auth'], function ($routes) {
 
     $routes->get('horarios', 'Docente\ProgramacionController::index');
 
+    $routes->get('horarios/generar_constancia/(:num)', 'Docente\ProgramacionController::generarConstancia/$1');
+
+
     $routes->group('docenteinfo', ['namespace' => 'App\Controllers'], function ($routes) {
         $routes->get('', 'Docente\DocenteInfoController::index');
         $routes->get('create', 'Docente\DocenteInfoController::create');

@@ -35,8 +35,8 @@
                     <td><?= $carrera['nombre']; ?></td>
                     <td><?= $carrera['tipo']; ?></td>
                     <td>
-                        <a href="<?= site_url('admin/carreras/asignaciones/' . $carrera['id']) ?>">Ver asignaciones</a>
-                        <?= anchor("admin/carreras/agregar_horario/{$carrera['id']}", 'Agregar Horario', 'class="button"'); ?>
+                        <a class="btn btn-primary" href="<?= site_url('admin/carreras/asignaciones/' . $carrera['id']) ?>">Ver asignaciones</a>
+                        <?= anchor("admin/carreras/agregar_horario/{$carrera['id']}", 'Agregar Horario', 'class="btn btn-danger"'); ?>
                     </td>
                     <td>
                         <a class="btn btn-sm btn-secondary mr-1" href="<?= base_url('admin/carreras/asignarDocentes/'.$carrera['id']); ?>">Agregar docentes</a>
@@ -66,7 +66,7 @@
             <th>COORDINADOR</th>
             <th>CARRERAS</th>
             <th>TIPO</th>
-            <th>HORARIIOS</th>
+            <th>HORARIOS</th>
             <th>DOCENTES</th>
             <th>ASIGNATURAS</th>
             <th>ACCIONES</th>

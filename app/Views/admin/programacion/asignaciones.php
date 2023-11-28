@@ -14,7 +14,6 @@
             <th>Docente</th>
             <th>Asignatura</th>
             <th>Horario</th>
-            <th>Fecha de Creación</th>
             <th>Acciones</th>
         </tr>
         </thead>
@@ -33,7 +32,7 @@
                     <?= $asignacion['hora_inicio2']; ?>
                     <?= $asignacion['hora_fin2']; ?>
                 </td>
-                <td><?= $asignacion['created_at']; ?></td>
+
                 <td>
                     <a href="#">Ver</a>
                     <a href="#">Editar</a>
